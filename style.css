@@ -1,0 +1,79 @@
+#carousel {
+  width: 800px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#img-container {
+  display: flex;
+  position: relative;
+  left: 0px;
+  transition-duration: 0.5s;
+}
+
+#img-container .divImage {
+  height: 500px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  min-width: 800px;
+  background-color: rgba(236, 225, 225, 0.651);
+}
+
+#img-container img {
+  max-width: 800px;
+  width: auto;
+}
+
+.carouselPicker {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background-color: rgba(185, 223, 223, 0.075);
+}
+
+.button {
+  border: none;
+  border-radius: 7px;
+  width: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 3px;
+  text-align: center;
+  text-shadow: 0px 2px 2px black;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #13bf9f;
+  text-shadow: 2px 3px 0px #191e3a;
+}
+
+#img-picker {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#img-picker span {
+  font-weight: bold;
+  text-shadow: 0px 2px 2px black;
+  cursor: pointer;
+}
+
+#img-picker span:hover {
+  text-shadow: 2px 3px 0px #191e3a;
+}
+
+#img-picker span.active {
+  color: #13bf9f;
+}
+
+/*
+background-image: linear-gradient(89deg, #13bf9f 100%, transparent);
+    background-size: 61%;
+    background-position: left;
+    background-repeat: no-repeat;*/
